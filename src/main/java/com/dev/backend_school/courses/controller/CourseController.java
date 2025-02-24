@@ -18,7 +18,7 @@ import java.util.Optional;
 @AllArgsConstructor
 @Getter
 @Setter
-@CrossOrigin (value = "http://localhost:5174")
+//@CrossOrigin (value = "http://localhost:5174")
 public class CourseController {
 
     private final CourseService courseService;
