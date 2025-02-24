@@ -4,6 +4,11 @@ spring:
     username: ${DB_USER:username}
     password: ${DB_PAWORD:password}
     driver-class-name: org.h2.Driver
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/backend-school/protocol/openid-connect/certs
   jpa:
     hibernate:
       #ddl-auto: create-drop
@@ -14,4 +19,4 @@ spring:
         format_sql: true
     database-platform: ${DB_DIALECT:org.hibernate.dialect.H2Dialect}
 server:
-  port: 8080
+  port: 8081
